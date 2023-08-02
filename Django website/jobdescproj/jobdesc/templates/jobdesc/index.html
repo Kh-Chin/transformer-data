@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generate Job Description</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  {% block css %}
+    <style>
+      /* Set primary and secondary colors */
+      :root {
+        --primary-color: #20c997;
+        --secondary-color: #ffc107;
+      }
+
+      /* Set background color */
+      body {
+        background-color: #f8f9fa;
+      }
+      
+      .header-pic{
+        background-image: url("{{STATIC_URL}}/jobdesc/homepage.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        position: relative;
+      }
+
+      .input-text-label label {
+        display: block;
+        margin-bottom: 5px;
+        text-align: left;
+      }
+
+      .title {
+        color: #fff;
+        font-size: 48px;
+        text-align: center;
+        padding: 50px 0;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Style input fields */
+      .input-field label {
+        color: var(--primary-color);
+      }
+      .input-field input[type="text"] {
+        border: 2px solid var(--primary-color);
+      }
+
+      .ul-container {
+        display: block;
+        margin-bottom: 1em;
+        zoom: 1;
+      }
+
+      .text-container {
+        overflow: hidden;
+        display: block;
+      }
+      
+      .text-field {
+        display: block;
+        width: 100%;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 0;
+        border: 1px solid silver;
+        padding: 10px;
+      }
+      /* Style submit button */
+      .submit-button {
+        background-color: var(--primary-color);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      .submit-button:hover {
+        background-color: #197d6f;
+      }
+
+      /* Style output field */
+      .output-field {
+        border: 2px solid var(--secondary-color);
+        color: var(--primary-color);
+      }
+    </style>
+  {% endblock %}
+</head>
+<body>
+  <div>
+    <div class="header-pic">
+      <h1 class="title">Job Description Generator</h1>
+    </div>
+  </div>
+  <div>
+    <img src="{% static 'jobdesc/homepage.jpg' %}" alt="">
+  </div>
+  <div class="container">
+    <h1>Teal and Yellow Form</h1>
+    <form action="" method="post">
+      {% csrf_token %}
+      <div class="ul-container">
+        <span class="text-container">
+          <label class="input-text-label">Company name:</label>
+          <input type="text" class="text-field">
+        </span>
+      </div>
+      <button class="submit-button" type="submit">Submit</button>
+    </form>
+    {% if output %}
+      <div class="output-field">
+        <h2>Output:</h2>
+        <p>{{ output }}</p>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
