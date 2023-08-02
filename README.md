@@ -15,3 +15,12 @@ Here are the process of the project:
 
 # Website design
 ![alt text](https://github.com/Kh-Chin/transformer-data/blob/main/README_media/website_design_1.png)
+
+![alt text](https://github.com/Kh-Chin/transformer-data/blob/main/README_media/website_design_2.png)
+
+![alt text](https://github.com/Kh-Chin/transformer-data/blob/main/README_media/website_design_3.png)
+
+# Sample output
+![alt text](https://github.com/Kh-Chin/transformer-data/blob/main/README_media/sample_job_description_1.png)
+
+![alt text](https://github.com/Kh-Chin/transformer-data/blob/main/README_media/sample_job_description_2.png)
