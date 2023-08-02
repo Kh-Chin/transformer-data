@@ -12,3 +12,6 @@ Here are the process of the project:
 5) Fine-tuned the model with job description data.
 6) Evaluated the model with some NLP metrics (BLEU, METEOR, etc).
 7) Built a Django website for user to interact with the model, with some post-processing layers.
+
+# Website design
+![alt text](https://github.com/Kh-Chin/transformer-data/blob/main/README_media/website_design_1.png)
