@@ -15,12 +15,15 @@ Here are the process of the project:
 
 # Website design
 > Homepage Design
+
 ![alt text](https://github.com/Kh-Chin/transformer-data/blob/main/README_media/website_design_1.png)
 
 > User input Design
+
 ![alt text](https://github.com/Kh-Chin/transformer-data/blob/main/README_media/website_design_2.png)
 
 > Output design
+
 ![alt text](https://github.com/Kh-Chin/transformer-data/blob/main/README_media/website_design_3.png)
 
 # Sample output
